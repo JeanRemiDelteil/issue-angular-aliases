@@ -1,11 +1,44 @@
+/* To learn more about this file see: https://angular.io/config/tsconfig. */
 {
-  "files": [],
-  "references": [
-    {
-      "path": "./tsconfig.app.json"
-    },
-    {
-      "path": "./tsconfig.spec.json"
+  "compileOnSave": false,
+  "compilerOptions": {
+    "baseUrl": "./",
+    "outDir": "./dist/out-tsc",
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "noImplicitOverride": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "sourceMap": true,
+    "declaration": false,
+    "downlevelIteration": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "moduleResolution": "node",
+    "importHelpers": true,
+    "target": "ES2015",
+    "module": "ESNext",
+    "useDefineForClassFields": false,
+    "strictPropertyInitialization": false,
+    "lib": [
+      "ES2022",
+      "dom"
+    ],
+    "typeRoots": ["node_modules/@types"],
+    "paths": {
+      "@components/button/module": ["lib/components/button/button.module.ts"],
+      "@components/container/module": ["lib/components/container/container.module.ts"],
     }
-  ]
+  },
+  "angularCompilerOptions": {
+    "strictInjectionParameters": true,
+    "preserveWhitespaces": false,
+    "strictTemplates": true,
+    "strictInputTypes": false
+  }
 }
